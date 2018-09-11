@@ -1,0 +1,17 @@
+<button (click)="modalOpen = true">Open Bad Modal</button>
+<button (click)="trapModalOpen = true">Open Trap Modal</button>
+<button (click)="focusedModalOpen = true">Open Focused Modal</button>
+<button (click)="announcerModalOpen = true">Open Announcement Modal</button>
+
+<!--BAD-->
+<app-simple-modal [isBadModal]="true" *ngIf="modalOpen === true" (close)="modalOpen = false;"></app-simple-modal>
+
+<!--Trapped-->
+<app-simple-modal [isTrapModal]="true" *ngIf="trapModalOpen === true" (close)="trapModalOpen = false;"></app-simple-modal>
+
+<!--Focused-->
+<app-simple-modal [isTrapFocusModal]="true" *ngIf="focusedModalOpen === true" (close)="focusedModalOpen = false;"></app-simple-modal>
+
+<!--Announcement-->
+<app-simple-modal [isTrapFocusModal]="true" *ngIf="announcerModalOpen === true" (close)="longRequest()"></app-simple-modal>
+

@@ -1,0 +1,28 @@
+<!--<div class="users-page">-->
+  <!--<div class="users-page__loading" *ngIf="isLoadingUsers">-->
+    <!--Loading Users-->
+  <!--</div>-->
+  <!--<div class="users-age__main" *ngIf="!isLoadingUsers">-->
+    <!--<h3 class="users-page__main__heading">-->
+      <!--Users List-->
+    <!--</h3>-->
+    <!--<div class="users-page__main__search">-->
+      <!--<input type="text" [(ngModel)]="searchQuery" placeholder="search users by name" (keyup)="handleKeyUp($event)">-->
+    <!--</div>-->
+    <!--<div class="users-page__main__list">-->
+      <!--<ng-container *ngFor="let user of users"-->
+                    <!--class="users-page__main__list__item"-->
+                    <!--(itemSelected)="showUserInfo($event)">-->
+        <!--<div class="item" [class.item&#45;&#45;active]="isActive">-->
+          <!--<div class="item__img">-->
+            <!--<img [src]="item.picture.thumbnail">-->
+          <!--</div>-->
+          <!--<div class="item__content">-->
+            <!--<div class="item__content__name">{{item.name.first}} {{item.name.last}}</div>-->
+            <!--<div class="item__content__email">{{item.email}}</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</ng-container>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
